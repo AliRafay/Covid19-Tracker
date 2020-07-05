@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const FetchApi = () => {
-    // const [url, setUrl] = useState('');
     const [globalData, setGlobalData] = useState({});
     const [countryData, setCountryData] = useState({});
     const [historicalData, setHistoricalData] = useState([]);

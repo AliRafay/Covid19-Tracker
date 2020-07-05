@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React from 'react'
 import GridCard from './MUIComponents/GridCard'
 
 const Country = () => {
@@ -10,3 +10,4 @@ const Country = () => {
 }
 
 export default Country;
+

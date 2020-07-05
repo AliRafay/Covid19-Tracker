@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import GridPaper from './MUIComponents/GridPaper'
 import LineChart from './Chart'
 
@@ -13,4 +13,4 @@ const Global = () => {
     )
 }
 
-export default Global
+export default Global;
