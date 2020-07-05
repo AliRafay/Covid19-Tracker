@@ -7,15 +7,15 @@ const FetchApi = () => {
 
     useEffect(() => {
         async function globalData() {
-            const response = await fetch("https://thevirustracker.com/free-api?global=stats");
+            const response = await fetch("https://disease.sh/v3/covid-19/all");
             let data = await response.json();
             setGlobalData({
-                'Total Cases': data.results[0]['total_cases'],
-                'Total Deaths': data.results[0]['total_deaths'],
-                'Total Recovered': data.results[0]['total_recovered'],
-                'Cases Today': data.results[0]['total_new_cases_today'],
-                'Deaths Today': data.results[0]['total_new_deaths_today'],
-                'Affected Countries': data.results[0]['total_affected_countries']
+                'Total Cases': data['cases'],
+                'Total Deaths': data['deaths'],
+                'Total Recovered': data['recovered'],
+                'Cases Today': data['todayCases'],
+                'Deaths Today': data['todayDeaths'],
+                'Affected Countries': data['affectedCountries']
             }
             );
 
