@@ -4,7 +4,7 @@ const FetchApi = () => {
     // const [url, setUrl] = useState('');
     const [globalData, setGlobalData] = useState({});
     const [countryData, setCountryData] = useState({});
-    const [mapData, setMapData] = useState([]);
+    const [historicalData, setHistoricalData] = useState([]);
 
     useEffect(() => {
         async function globalData() {
@@ -32,9 +32,20 @@ const FetchApi = () => {
         }
         countryData();
     },[])
+
+
+    useEffect(()=>{
+        async function historicalData(){
+            const response = await fetch('https://disease.sh/v2/historical/all?lastdays=120');
+            let data = await response.json();
+            setHistoricalData(data);
+        }
+        historicalData();
+    },[])
+
     return (
-        {globalData,countryData}
+        {globalData,countryData,historicalData}
     )
 }
-
+    
 export default FetchApi;

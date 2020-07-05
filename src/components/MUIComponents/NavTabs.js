@@ -32,7 +32,7 @@ export default function NavTabs({screenConfig}) {
       >
         <Tab label="Global" />
         <Tab label="Country" />
-        <Tab label="All Countires" />
+        {/* <Tab label="All Countires" /> */}
       </Tabs>
     </Paper>
   );

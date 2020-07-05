@@ -1,14 +1,12 @@
 import React, { useState, useContext } from 'react'
-import GridCard from'./MUIComponents/GridCard'
-import { covidContext } from '../context/globalState'
+import GridCard from './MUIComponents/GridCard'
 
 const Country = () => {
-    const subScreen=useState(0);
-        return (
-            <div>
-                <GridCard subScreen={subScreen}/>
-            </div>
-        )
+    return (
+        <div>
+            <GridCard />
+        </div>
+    )
 }
 
 export default Country;

@@ -6,11 +6,12 @@ export const covidContext=createContext();
 
 const CovidProvider = ({children}) => {
 
-    const {globalData,countryData}=FetchApi();
+    const {globalData,countryData,historicalData}=FetchApi();
     return (
         <covidContext.Provider value={{
             globalData,
             countryData,
+            historicalData,
         }}>
             {children}
         </covidContext.Provider>
