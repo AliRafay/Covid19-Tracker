@@ -1,0 +1,14 @@
+.CountrySubHead{
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px ;
+    font-family: 'Poppins', sans-serif;
+}
+
+.CountrySubData{
+    font-size: 16px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
