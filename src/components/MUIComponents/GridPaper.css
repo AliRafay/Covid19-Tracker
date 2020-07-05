@@ -1,42 +1,13 @@
-.makeStyles-paper-8 h2{
+.headh2{
     font-size: 25px;
     margin: 0;
     font-family: 'Fredoka One', cursive;
 
 }
-.makeStyles-paper-8 h6{
+.headh6{
     font-size: 20px;
     margin: 0;
     margin-top: 15px;
     font-family: 'Fredoka One', cursive;
 
-}
-.header{
-    background-color: #00caca;
-    border: solid 3px #009191;
-    border-radius: 7px;
-}
-.header h1{
-    margin:0;
-    font-family: 'Trebuchet MS','Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-family: 'Fredoka One', cursive;
-    letter-spacing: 2px;
-    color: #0050a0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.MuiTab-textColorPrimary{
-    color: #0050a0 !important;
-}
-
-.MuiTabs-indicator {
-    background-color: white !important;
-}
-.Mui-selected{
-    color: white !important;
-}
-
-.MuiTab-wrapper{
-    font-family: 'Fredoka One', cursive;
 }

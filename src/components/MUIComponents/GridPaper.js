@@ -59,38 +59,38 @@ export default function GridPaper() {
       <Grid container spacing={5}>
         <Grid item xs={12} sm={6} md={4} >
           <Paper elevation={8} className={`${classes.paper} ${classes.totalCases}`}>
-            <h2>Total Cases</h2>
-            <h6> &nbsp; <CounterTag index={0}/> </h6>
+            <h2 className='headh2'>Total Cases</h2>
+            <h6 className='headh6'> &nbsp; <CounterTag index={0}/> </h6>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={4} >
           <Paper elevation={8} className={`${classes.paper} ${classes.totalDeaths}`}>
-            <h2>Total Deaths</h2>
-            <h6> &nbsp; <CounterTag index={1}/> </h6>
+            <h2 className='headh2'>Total Deaths</h2>
+            <h6 className='headh6'> &nbsp; <CounterTag index={1}/> </h6>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={4} >
           <Paper elevation={8} className={`${classes.paper} ${classes.totalRecovered}`}>
-            <h2>Total Recovered</h2>
-            <h6>&nbsp;<CounterTag index={2}/></h6>
+            <h2 className='headh2'>Total Recovered</h2>
+            <h6 className='headh6'>&nbsp;<CounterTag index={2}/></h6>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={4} >
           <Paper elevation={8} className={`${classes.paper} ${classes.casesToday}`}>
-            <h2>Cases Today</h2>
-            <h6>&nbsp;<CounterTag index={3}/></h6>
+            <h2 className='headh2'>Cases Today</h2>
+            <h6 className='headh6'>&nbsp;<CounterTag index={3}/></h6>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={4} >
           <Paper elevation={8} className={`${classes.paper} ${classes.deathsToday}`}>
-            <h2>Deaths Today</h2>
-            <h6>&nbsp;<CounterTag index={4}/></h6>
+            <h2 className='headh2'>Deaths Today</h2>
+            <h6 className='headh6'>&nbsp;<CounterTag index={4}/></h6>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={4} >
           <Paper elevation={8} className={`${classes.paper} ${classes.affectedCountries}`}>
-            <h2>Affected Countries</h2>
-            <h6>&nbsp;<CounterTag index={5} /></h6>
+            <h2 className='headh2'>Affected Countries</h2>
+            <h6 className='headh6'>&nbsp;<CounterTag index={5} /></h6>
           </Paper>
         </Grid>
       </Grid>
