@@ -10,4 +10,4 @@ const DisplayPage = ({ currentScreen }) => {
         return <Country />
     // else return <AllCountries />
 }
-export default DisplayPage
+export default DisplayPage;
