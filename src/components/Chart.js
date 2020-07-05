@@ -71,7 +71,7 @@ const LineChart = () => {
             <center>
             <h2 className='chartHead'>Last 6 Months Data</h2>
             </center>
-            <Line width={"400px"} height={'100px'} data={data} />
+            <Line width={"100%"} height={'45vw'}  data={data} />
         </div>
     );
 };
