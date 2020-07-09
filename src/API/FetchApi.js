@@ -4,7 +4,6 @@ const FetchApi = () => {
     const [globalData, setGlobalData] = useState({});
     const [countryData, setCountryData] = useState({});
     const [historicalData, setHistoricalData] = useState([]);
-
     useEffect(() => {
         async function globalData() {
             const response = await fetch("https://disease.sh/v3/covid-19/all");
@@ -23,28 +22,26 @@ const FetchApi = () => {
         globalData();
     }, []);
 
-    useEffect(()=>{
-        async function countryData(){
+    useEffect(() => {
+        async function getCountryData() {
             const response = await fetch('https://corona.lmao.ninja/v2/countries');
             let data = await response.json();
             setCountryData(data);
         }
-        countryData();
-    },[])
-
-
-    useEffect(()=>{
-        async function historicalData(){
+        getCountryData();
+    }, []);
+    useEffect(() => {
+        async function historicalData() {
             const response = await fetch('https://disease.sh/v2/historical/all?lastdays=120');
             let data = await response.json();
             setHistoricalData(data);
         }
         historicalData();
-    },[])
+    }, [])
 
     return (
-        {globalData,countryData,historicalData}
+        { globalData, countryData, historicalData}
     )
 }
-    
+
 export default FetchApi;
